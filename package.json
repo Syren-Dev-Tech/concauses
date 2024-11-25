@@ -1,0 +1,23 @@
+{
+    "name": "@chrisofnormandy/concauses",
+    "version": "1.0.0",
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        "./strings": {
+            "import": "./dist/strings.js",
+            "require": "./dist/strings.js",
+            "types": "./dist/strings.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "tsc -p tsconfig.json"
+    },
+    "author": "chrisofnormandy",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "typescript": "^5.6.3"
+    }
+}
