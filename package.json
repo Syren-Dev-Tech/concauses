@@ -3,7 +3,6 @@
     "description": "Common helper functions and configs.",
     "license": "MIT",
     "name": "@chrisofnormandy/confetti",
-    "packageManager": "yarn@4.6.0",
     "type": "module",
     "version": "0.0.0",
     "files": [
@@ -39,5 +38,6 @@
     "scripts": {
         "clean": "rm -rf dist",
         "build": "yarn clean; tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json"
-    }
+    },
+    "packageManager": "yarn@4.6.0"
 }
