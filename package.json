@@ -1,11 +1,11 @@
 {
-    "author": "chrisofnormandy",
-    "description": "",
-    "license": "ISC",
-    "name": "@chrisofnormandy/concauses",
-    "packageManager": "yarn@4.5.3",
-    "version": "0.0.0",
+    "author": "ChrisOfNormandy",
+    "description": "Common helper functions and configs.",
+    "license": "MIT",
+    "name": "@chrisofnormandy/confetti",
+    "packageManager": "yarn@4.6.0",
     "type": "module",
+    "version": "0.0.0",
     "files": [
         "dist"
     ],

@@ -5,9 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@chrisofnormandy/concauses@workspace:.":
+"@chrisofnormandy/confetti@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@chrisofnormandy/concauses@workspace:."
+  resolution: "@chrisofnormandy/confetti@workspace:."
   dependencies:
     "@eslint/js": "npm:^9.17.0"
     "@types/eslint__js": "npm:^8.42.3"
