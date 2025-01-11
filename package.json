@@ -2,7 +2,7 @@
     "author": "ChrisOfNormandy",
     "description": "Common helper functions and configs.",
     "license": "MIT",
-    "name": "@chrisofnormandy/confetti",
+    "name": "@chrisofnormandy/concauses",
     "type": "module",
     "version": "0.0.0",
     "files": [
