@@ -9,12 +9,9 @@ Using this package:
 ```ts
 // @ts-check
 
-import { reactViteConfig, typescriptConfig } from '@chrisofnormandy/concauses/linter';
+import { reactViteConfig, typescriptConfig } from './dist/lib/linter.js';
 
-export default [
-    ...typescriptConfig(),
-    ...reactViteConfig()
-];
+export default [...typescriptConfig(), ...reactViteConfig()];
 ```
 
 Without this package:
