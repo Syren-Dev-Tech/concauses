@@ -1,11 +1,18 @@
-interface PrettyOptions {
+export interface PrettyOptions {
     capitalize?: 'none' | 'first' | 'all'
     splitOn?: string | RegExp
     join?: string
 }
 
+export function capitalize(str: string) {
+    if (str === '')
+        return '';
+
+    return (str[0] || '').toUpperCase() + str.slice(1);
+}
+
 export function prettyString(str: string, options?: PrettyOptions) {
-    if (!str)
+    if (str === '')
         return '';
 
     const splitOn = options?.splitOn || /[-_\s]/g;
@@ -17,11 +24,4 @@ export function prettyString(str: string, options?: PrettyOptions) {
         case 'first': return [capitalize(spl[0] || ''), ...spl.slice(1)].join(join);
         default: return spl.join(join);
     }
-}
-
-export function capitalize(str: string) {
-    if (!str)
-        return '';
-
-    return (str[0] || '').toUpperCase + str.slice(1);
 }

@@ -4,40 +4,55 @@
     "license": "MIT",
     "name": "@chrisofnormandy/concauses",
     "type": "module",
-    "version": "0.0.0",
+    "version": "0.0.0-2",
     "files": [
         "dist"
     ],
     "exports": {
-        "./strings": {
-            "types": "./dist/lib/strings.d.ts",
-            "import": "./dist/lib/strings.js",
-            "require": null
-        },
         "./linter": {
             "types": "./dist/lib/linter.d.ts",
             "import": "./dist/lib/linter.js",
             "require": null
+        },
+        "./numbers": {
+            "types": "./dist/lib/numbers.d.ts",
+            "import": "./dist/lib/numbers.js",
+            "require": null
+        },
+        "./sorting": {
+            "types": "./dist/lib/sorting.d.ts",
+            "import": "./dist/lib/sorting.js",
+            "require": null
+        },
+        "./strings": {
+            "types": "./dist/lib/strings.d.ts",
+            "import": "./dist/lib/strings.js",
+            "require": null
         }
     },
+    "dependencies": {
+        "@eslint/js": "^9.25.1",
+        "@stylistic/eslint-plugin-js": "^4.2.0",
+        "@stylistic/eslint-plugin-jsx": "^4.2.0",
+        "@stylistic/eslint-plugin-ts": "^4.2.0",
+        "eslint-plugin-react": "^7.37.5",
+        "globals": "^16.0.0",
+        "typescript-eslint": "^8.31.0"
+    },
     "devDependencies": {
-        "@eslint/js": "^9.17.0",
-        "@types/eslint__js": "^8.42.3",
-        "@types/node": "^22.10.2",
-        "eslint": "^9.17.0",
-        "eslint-plugin-react": "^7.37.2",
-        "eslint-plugin-react-hooks": "^5.1.0",
-        "eslint-plugin-react-refresh": "^0.4.16",
-        "globals": "^15.14.0",
-        "knip": "^5.41.1",
-        "tsc-alias": "^1.8.10",
+        "@types/node": "^22.15.2",
+        "eslint": "^9.25.1",
+        "eslint-plugin-react-hooks": "^5.2.0",
+        "eslint-plugin-react-refresh": "^0.4.20",
+        "knip": "^5.50.5",
+        "tsc-alias": "^1.8.15",
         "tsconfig-paths": "^4.2.0",
-        "typescript": "^5.7.2",
-        "typescript-eslint": "^8.19.0"
+        "typescript": "^5.8.3"
     },
     "scripts": {
         "clean": "rm -rf dist",
-        "build": "yarn clean; tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json"
+        "build": "yarn clean; tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+        "lint": "eslint lib"
     },
-    "packageManager": "yarn@4.6.0"
+    "packageManager": "yarn@4.9.1"
 }
