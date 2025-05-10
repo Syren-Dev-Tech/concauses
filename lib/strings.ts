@@ -16,7 +16,7 @@ export function prettyString(str: string, options?: PrettyOptions) {
         return '';
 
     const splitOn = options?.splitOn || /[-_\s]/g;
-    const join = options?.join || ' ';
+    const join = options?.join ?? ' ';
     const spl = str.split(splitOn);
 
     switch (options?.capitalize) {

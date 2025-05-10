@@ -5,28 +5,6 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@chrisofnormandy/concauses@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@chrisofnormandy/concauses@workspace:."
-  dependencies:
-    "@eslint/js": "npm:^9.25.1"
-    "@stylistic/eslint-plugin-js": "npm:^4.2.0"
-    "@stylistic/eslint-plugin-jsx": "npm:^4.2.0"
-    "@stylistic/eslint-plugin-ts": "npm:^4.2.0"
-    "@types/node": "npm:^22.15.2"
-    eslint: "npm:^9.25.1"
-    eslint-plugin-react: "npm:^7.37.5"
-    eslint-plugin-react-hooks: "npm:^5.2.0"
-    eslint-plugin-react-refresh: "npm:^0.4.20"
-    globals: "npm:^16.0.0"
-    knip: "npm:^5.50.5"
-    tsc-alias: "npm:^1.8.15"
-    tsconfig-paths: "npm:^4.2.0"
-    typescript: "npm:^5.8.3"
-    typescript-eslint: "npm:^8.31.0"
-  languageName: unknown
-  linkType: soft
-
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.4.1
   resolution: "@eslint-community/eslint-utils@npm:4.4.1"
@@ -268,6 +246,28 @@ __metadata:
   checksum: 10c0/018a0cf08f9cfbf48ff77d214ca5cb52a60ba8b4b70bda1af3eea8f9640e24ea7add694fd6bfd916566cc7a63635ba07d6fde4d1f298fc1a99bd6ab39c99a7c2
   languageName: node
   linkType: hard
+
+"@syren-dev-tech/concauses@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@syren-dev-tech/concauses@workspace:."
+  dependencies:
+    "@eslint/js": "npm:^9.25.1"
+    "@stylistic/eslint-plugin-js": "npm:^4.2.0"
+    "@stylistic/eslint-plugin-jsx": "npm:^4.2.0"
+    "@stylistic/eslint-plugin-ts": "npm:^4.2.0"
+    "@types/node": "npm:^22.15.2"
+    eslint: "npm:^9.25.1"
+    eslint-plugin-react: "npm:^7.37.5"
+    eslint-plugin-react-hooks: "npm:^5.2.0"
+    eslint-plugin-react-refresh: "npm:^0.4.20"
+    globals: "npm:^16.0.0"
+    knip: "npm:^5.50.5"
+    tsc-alias: "npm:^1.8.15"
+    tsconfig-paths: "npm:^4.2.0"
+    typescript: "npm:^5.8.3"
+    typescript-eslint: "npm:^8.31.0"
+  languageName: unknown
+  linkType: soft
 
 "@types/estree@npm:^1.0.6":
   version: 1.0.6
