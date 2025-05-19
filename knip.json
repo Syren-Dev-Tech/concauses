@@ -1,0 +1,17 @@
+{
+    "$schema": "https://unpkg.com/knip@5/schema.json",
+    "entry": [
+        "lib/linter.ts",
+        "lib/numbers.ts",
+        "lib/sorting.ts",
+        "lib/strings.ts"
+    ],
+    "ignore": [
+        "dist/**/*"
+    ],
+    "ignoreDependencies": [
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "tsconfig-paths"
+    ]
+}
