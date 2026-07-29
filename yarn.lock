@@ -133,7 +133,7 @@ __metadata:
     knip: "npm:^6.29.0"
     oxlint: "npm:^1.75.0"
     oxlint-tsgolint: "npm:^7.0.2001"
-    postcss: "npm:^8.5.22"
+    postcss: "npm:^8.5.25"
     stylelint: "npm:^17.14.1"
     stylelint-config-standard: "npm:^40.0.0"
     stylelint-config-standard-scss: "npm:^17.0.0"
@@ -2117,7 +2117,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.16, postcss@npm:^8.5.22":
+"postcss@npm:^8.5.16":
   version: 8.5.22
   resolution: "postcss@npm:8.5.22"
   dependencies:
@@ -2125,6 +2125,17 @@ __metadata:
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
   checksum: 10c0/9e143ee457988049d5f187116fd37f2750ae9d8d71cc99eae690b776e549e134b34086cbaa2f0360ecd1729b15d918227bd0fc3a2ffbe341f7212d0827080793
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.25":
+  version: 8.5.25
+  resolution: "postcss@npm:8.5.25"
+  dependencies:
+    nanoid: "npm:^3.3.16"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/0a12c1e74b456c57122e81f684e02fd98ff4d57526f794d10c996df1147158808f5ae373ac82b988c8de6cbbaa82dbd7b13803b14f5dd3cf7cc6a42ccad5c9f2
   languageName: node
   linkType: hard
 
