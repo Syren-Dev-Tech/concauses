@@ -719,37 +719,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/stylelint-plugin@npm:^5.1.0":
-  version: 5.2.0
-  resolution: "@stylistic/stylelint-plugin@npm:5.2.0"
+"@stylistic/stylelint-plugin@npm:^5.1.0, @stylistic/stylelint-plugin@npm:^5.2.1":
+  version: 5.3.0
+  resolution: "@stylistic/stylelint-plugin@npm:5.3.0"
   dependencies:
     "@csstools/css-parser-algorithms": "npm:^4.0.0"
     "@csstools/css-tokenizer": "npm:^4.0.0"
     "@csstools/media-query-list-parser": "npm:^5.0.0"
-    postcss: "npm:^8.5.8"
-    postcss-selector-parser: "npm:^7.1.1"
+    postcss: "npm:^8.5.26"
+    postcss-selector-parser: "npm:^7.1.5"
     postcss-value-parser: "npm:^4.2.0"
     style-search: "npm:^0.1.0"
   peerDependencies:
     stylelint: ^17.6.0
-  checksum: 10c0/de3124be14cc6e7bae29e9cd56531c96aea571b9232039b020d187cd51fff9c938ad6d3f577ef680510cf44cd881463764858d19460295bc2f024f7cbd532a1e
-  languageName: node
-  linkType: hard
-
-"@stylistic/stylelint-plugin@npm:^5.2.1":
-  version: 5.2.1
-  resolution: "@stylistic/stylelint-plugin@npm:5.2.1"
-  dependencies:
-    "@csstools/css-parser-algorithms": "npm:^4.0.0"
-    "@csstools/css-tokenizer": "npm:^4.0.0"
-    "@csstools/media-query-list-parser": "npm:^5.0.0"
-    postcss: "npm:^8.5.8"
-    postcss-selector-parser: "npm:^7.1.1"
-    postcss-value-parser: "npm:^4.2.0"
-    style-search: "npm:^0.1.0"
-  peerDependencies:
-    stylelint: ^17.6.0
-  checksum: 10c0/1d91636e454bf90d598e8161a5996bd2c96b25c42da3d2968d81f0d5e93b80671011b6ae0fd0c995d89efb8b57af3741044d747a4e69e663e28c6918c7c97311
+  checksum: 10c0/9a498172b23d4e1db468db6361d54702db5c6c0493b9d56e52d3ee01161737f3ebff77668a395840e6e2f73f7e36d7b17f5ac419a4f6a337e295479d73dea879
   languageName: node
   linkType: hard
 
@@ -1706,7 +1689,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.18":
+"nanoid@npm:^3.3.17, nanoid@npm:^3.3.18":
   version: 3.3.18
   resolution: "nanoid@npm:3.3.18"
   bin:
@@ -2101,6 +2084,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-selector-parser@npm:^7.1.5":
+  version: 7.1.5
+  resolution: "postcss-selector-parser@npm:7.1.5"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    util-deprecate: "npm:^1.0.2"
+  checksum: 10c0/e277a136ef87ae2abbc77d38e0773bf6245975889ada3d7d785f515df4d2ab543322f9189e851d6a6bcd2d8e512a1164d1dfd5af2f5bbb2d177c687faf945038
+  languageName: node
+  linkType: hard
+
 "postcss-value-parser@npm:^4.2.0":
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
@@ -2108,7 +2101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.16, postcss@npm:^8.5.23, postcss@npm:^8.5.8":
+"postcss@npm:^8.5.16, postcss@npm:^8.5.23":
   version: 8.5.28
   resolution: "postcss@npm:8.5.28"
   dependencies:
@@ -2116,6 +2109,17 @@ __metadata:
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
   checksum: 10c0/9fe44215a6628d89c8a75184b92f5b2f77e16f9e5b13b39b9009bb7e8e6eccddf82c8854bae922db1f17ace6ef3445073fe38abff513caeb03e5285b1b55620a
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.26":
+  version: 8.5.26
+  resolution: "postcss@npm:8.5.26"
+  dependencies:
+    nanoid: "npm:^3.3.17"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/2bdafc00d96bd57b6649a52e458864a4bf58ee56cfdbe4aea1472b5cccc127e6c1ad653bd0bec50d211e650eb0b9270c80e1e72aff2e2fa40d9e7363234d6e43
   languageName: node
   linkType: hard
 
