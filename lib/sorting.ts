@@ -7,11 +7,9 @@ export type Sortable = string | number | Date | boolean;
  * @returns A negative number if a is less than b, a positive number if a is greater than b, or 0 if they are equal.
  */
 export function sortByValue<T = Sortable>(a: T, b: T) {
-    if (a < b)
-        return -1;
+    if (a < b) return -1;
 
-    if (a > b)
-        return 1;
+    if (a > b) return 1;
 
     return 0;
 }

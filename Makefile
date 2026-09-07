@@ -40,7 +40,6 @@ publish: check-published
 		echo "Tag $(TAG) is ready for release."; \
 	fi
 
-PACKAGE_JSON = node -e "const pkg = require('./package.json'); console.log(Object.keys(pkg.dependencies).join('\n'));"
 up-deps:
 	@if ! command -v jq >/dev/null 2>&1; then \
 		echo "Error: jq is required but not installed." >&2; \

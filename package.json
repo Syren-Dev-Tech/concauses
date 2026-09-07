@@ -5,7 +5,7 @@
     "name": "@dead-harbour/shipshape",
     "packageManager": "yarn@4.18.0",
     "type": "module",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "files": [
         "dist"
     ],
@@ -13,6 +13,11 @@
         "./oxlint": {
             "types": "./dist/lib/oxlint.d.ts",
             "import": "./dist/lib/oxlint.js",
+            "require": null
+        },
+        "./oxfmt": {
+            "types": "./dist/lib/oxfmt.d.ts",
+            "import": "./dist/lib/oxfmt.js",
             "require": null
         },
         "./numbers": {
@@ -43,25 +48,26 @@
     },
     "dependencies": {
         "@stylistic/stylelint-config": "^5.0.0",
-        "@stylistic/stylelint-plugin": "^5.2.1",
-        "oxlint-tsgolint": "^7.0.2001",
-        "stylelint": "^17.14.1",
+        "@stylistic/stylelint-plugin": "^5.3.0",
+        "stylelint": "^17.15.0",
         "stylelint-config-standard": "^40.0.0",
         "stylelint-config-standard-scss": "^17.0.0",
         "stylelint-scss": "^7.2.0"
     },
     "devDependencies": {
-        "@types/node": "^26.1.1",
-        "knip": "^6.29.0",
-        "oxlint": "^1.75.0",
-        "postcss": "^8.5.26",
-        "tsc-alias": "^1.9.1",
+        "@types/node": "^26.4.1",
+        "knip": "^6.34.0",
+        "oxfmt": "^0.66.0",
+        "oxlint": "^1.81.0",
+        "oxlint-tsgolint": "^7.0.2001",
+        "postcss": "^8.5.28",
+        "tsc-alias": "^1.9.4",
         "typescript": "^7.0.2"
     },
     "scripts": {
         "build": "yarn clean; tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
         "clean": "rm -rf dist",
-        "lint": "oxlint . --fix && yarn lint:scss",
+        "lint": "oxlint . --fix; oxfmt; yarn lint:scss",
         "lint:scss": "yarn stylelint '**/*.scss' --fix",
         "sanity": "yarn typecheck && yarn lint && yarn knip",
         "typecheck": "tsc -p tsconfig.json --noEmit"

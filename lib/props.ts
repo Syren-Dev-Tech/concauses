@@ -3,7 +3,7 @@ import { uniqueKey } from './strings';
 type ClassName = string | number | boolean;
 
 export interface PartsProps<T> {
-    parts?: T
+    parts?: T;
 }
 
 /**
@@ -15,20 +15,17 @@ export function getClassName(...classes: (ClassName | undefined)[]) {
     const classSet = new Set<string>();
 
     const addValidClass = (s: string) => {
-        if (s !== '')
-            classSet.add(s);
+        if (s !== '') classSet.add(s);
     };
 
     for (const c of classes) {
         if (c !== undefined && c !== null && typeof c !== 'boolean') {
             const spl = c.toString().split(' ');
-            for (const s of spl)
-                addValidClass(s);
+            for (const s of spl) addValidClass(s);
         }
     }
 
-    if (classSet.size === 0)
-        return undefined;
+    if (classSet.size === 0) return undefined;
 
     return [...classSet].join(' ');
 }

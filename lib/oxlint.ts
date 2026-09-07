@@ -1,10 +1,11 @@
-import { defineConfig } from "oxlint";
+import { defineConfig } from 'oxlint';
 
 const MAX_COMPLEXITY = 10;
-const MAX_DEPTH = 3;
+const MAX_DEPTH = 5;
+const MAX_STATEMENTS = 15;
 const MAX_NESTED_CALLBACKS = 3;
 
-export function oxlintConfig() {
+export default function oxlintConfig() {
     return defineConfig({
         categories: {
             correctness: 'error',
@@ -30,11 +31,12 @@ export function oxlintConfig() {
             'dot-notation': 'warn',
             eqeqeq: 'warn',
             'func-names': 'error',
-            'func-style': ['warn', 'expression', { overrides: { namedExports: 'declaration' } }],
+            'func-style': 'off',
             'id-length': 'off',
             'max-classes-per-file': ['warn', 1],
             'max-depth': ['warn', MAX_DEPTH],
             'max-nested-callbacks': ['warn', MAX_NESTED_CALLBACKS],
+            'max-statements': ['warn', MAX_STATEMENTS],
             'no-alert': 'error',
             'no-array-constructor': 'warn',
             'no-await-in-loop': 'warn',
@@ -92,6 +94,7 @@ export function oxlintConfig() {
             'no-void': 'warn',
             'no-warning-comments': 'warn',
             'object-shorthand': 'warn',
+            'one-var': 'off',
             'prefer-arrow-callback': 'warn',
             'prefer-const': 'warn',
             'prefer-destructuring': 'warn',
@@ -102,13 +105,17 @@ export function oxlintConfig() {
             'prefer-regex-literals': 'warn',
             'prefer-rest-params': 'warn',
             'prefer-spread': 'warn',
+            'react/jsx-max-depth': ['warn', { max: 5 }],
+            'react/jsx-props-no-spreading': 'off',
+            'react/react-in-jsx-scope': 'off',
             'require-await': 'warn',
             'require-yield': 'warn',
+            'sort-imports': 'off',
             'sort-keys': ['warn', 'asc', { allowLineSeparatedGroups: true, natural: true }],
             'sort-vars': 'warn',
             'symbol-description': 'warn',
             'vars-on-top': 'warn',
             yoda: 'error'
         }
-    })
+    });
 }

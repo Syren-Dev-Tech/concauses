@@ -1,3 +1,3 @@
-import { oxlintConfig } from './dist/lib/oxlint.js';
+import oxlintConfig from '@dead-harbour/shipshape/oxlint';
 
 export default oxlintConfig();

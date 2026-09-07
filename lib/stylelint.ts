@@ -2,11 +2,7 @@ import type { Config } from 'stylelint';
 
 export function stylelint(): Config {
     return {
-        extends: [
-            'stylelint-config-standard',
-            'stylelint-config-standard-scss',
-            '@stylistic/stylelint-config'
-        ],
+        extends: ['stylelint-config-standard', 'stylelint-config-standard-scss', '@stylistic/stylelint-config'],
         plugins: ['stylelint-scss', '@stylistic/stylelint-plugin'],
         rules: {
             '@stylistic/string-quotes': 'single',

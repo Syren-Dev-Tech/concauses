@@ -1,7 +1,7 @@
 export interface PrettyOptions {
-    capitalize?: 'none' | 'first' | 'all'
-    splitOn?: string | RegExp
-    join?: string
+    capitalize?: 'none' | 'first' | 'all';
+    splitOn?: string | RegExp;
+    join?: string;
 }
 
 /**
@@ -10,8 +10,7 @@ export interface PrettyOptions {
  * @returns The input string with the first letter capitalized.
  */
 export function capitalize(str: string) {
-    if (str === '')
-        return '';
+    if (str === '') return '';
 
     return (str[0] || '').toUpperCase() + str.slice(1);
 }
@@ -26,8 +25,7 @@ export function capitalize(str: string) {
  * @returns A prettified version of the input string based on the provided options.
  */
 export function prettyString(str: string, options?: PrettyOptions) {
-    if (str === '')
-        return '';
+    if (str === '') return '';
 
     const splitOn = options?.splitOn || /[-_\s]/g;
     const join = options?.join ?? ' ';
@@ -47,7 +45,7 @@ export function prettyString(str: string, options?: PrettyOptions) {
 }
 
 const UUID_TEMPLATE = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx';
-const UUID_BYTES = 16
+const UUID_BYTES = 16;
 
 /**
  * Generates a unique identifier (UUID) string based on a template.
@@ -55,10 +53,10 @@ const UUID_BYTES = 16
  * @returns A unique identifier string in the UUID format.
  */
 export function uniqueId() {
-    return UUID_TEMPLATE.replaceAll(/[xy]/g, c => {
+    return UUID_TEMPLATE.replaceAll(/[xy]/g, (c) => {
         const r = Math.trunc(Math.random() * UUID_BYTES); // NOSONAR - Allowed use of random
         // oxlint-disable-next-line no-magic-numbers
-        const v = c === 'x' ? r : (r & 0x3 | 0x8);
+        const v = c === 'x' ? r : (r & 0x3) | 0x8;
 
         return v.toString(UUID_BYTES);
     });
